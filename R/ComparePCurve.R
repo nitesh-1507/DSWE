@@ -142,7 +142,7 @@ ComparePCurve = function(data, xCol, xCol.circ = NULL, yCol, testCol, testSet = 
 
   reductionRatio = ComputeRatio(data, resultMatching$matchedData, testCol)
 
-  returnList = list(Diff = resultWMetric, scaledDiff = resultWExtrapolation, statDiff = resultWSMetric, scaledStatDiff = resultWSExtrapolation, reductionRatio = reductionRatio, muDiff = resultGP$muDiff, mu2 = resultGP$diffCov$mu2, mu1 = resultGP$diffCov$mu1, band = resultGP$band, confLevel = conflevel, testSet = testSet, estimatedParams = resultGP$params)
+  returnList = list(Diff = resultWMetric, scaledDiff = resultWExtrapolation, statDiff = resultWSMetric, scaledStatDiff = resultWSExtrapolation, reductionRatio = reductionRatio, muDiff = resultGP$muDiff, mu2 = resultGP$mu2, mu1 = resultGP$mu1, band = resultGP$band, confLevel = conflevel, testSet = testSet, estimatedParams = resultGP$estimatedParams)
 
   return(returnList)
 }
