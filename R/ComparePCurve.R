@@ -117,8 +117,9 @@ ComparePCurve = function(data, xCol, xCol.circ = NULL, yCol, testCol, testSet = 
 
          stop('The product of gridSize should not be more than 2500')
 
-        testSet = GenerateTestset(resultMatching$matchedData, testCol, gridSize )
     }
+
+    testSet = GenerateTestset(resultMatching$matchedData, testCol, gridSize )
 
   }else if(!is.matrix(testSet) & !is.data.frame(testSet)){
 
